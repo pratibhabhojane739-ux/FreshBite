@@ -1,9 +1,0 @@
-// FreshBite JavaScript
-
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("FreshBite Website Loaded!");
-});
-
-function orderNow() {
-    alert("Thank you for choosing FreshBite! Your order will be processed.");
-}
