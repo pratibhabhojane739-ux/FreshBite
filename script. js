@@ -1,0 +1,17 @@
+// FreshBite JavaScript
+
+function orderNow() {
+    alert("🍔 Thank you for choosing FreshBite!\nYour order has been placed successfully.");
+}
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+    if (button.innerText.includes("Add")) {
+        button.addEventListener("click", function () {
+            alert("✅ Item added to cart!");
+        });
+    }
+});
+
+console.log("FreshBite Website Loaded Successfully!");
