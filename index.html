@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshBite - Online Food Ordering</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+<nav class="navbar">
+<h2 class="logo">🍕 FreshBite</h2>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#cart">
+🛒 Cart
+<span id="cart-count">0</span>
+</a></li>
+</ul>
+
+</nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+<h1>Fresh & Delicious Food</h1>
+<p>Order your favourite meals anytime.</p>
+
+<a href="#menu" class="btn">
+Order Now
+</a>
+
+</section>
+
+<!-- Categories -->
+<section class="categories">
+
+<h2>Food Categories</h2>
+
+<div class="category-box">
+
+<div class="category">
+🍕
+<h3>Pizza</h3>
+</div>
+
+<div class="category">
+🍔
+<h3>Burger</h3>
+</div>
+
+<div class="category">
+🍝
+<h3>Pasta</h3>
+</div>
+
+<div class="category">
+🥤
+<h3>Drinks</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- Menu -->
+<section id="menu">
+
+<h2>Popular Menu</h2>
+
+<div class="food-container">
+  <!-- Food Card 1 -->
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500" alt="Pizza">
+    <h3>Margherita Pizza</h3>
+    <p>₹299</p>
+    <button onclick="addToCart('Margherita Pizza',299)">Add to Cart</button>
+</div>
+
+<!-- Food Card 2 -->
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" alt="Burger">
+    <h3>Chicken Burger</h3>
+    <p>₹149</p>
+    <button onclick="addToCart('Chicken Burger',149)">Add to Cart</button>
+</div>
+
+<!-- Food Card 3 -->
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500" alt="Pasta">
+    <h3>Creamy Pasta</h3>
+    <p>₹199</p>
+    <button onclick="addToCart('Creamy Pasta',199)">Add to Cart</button>
+</div>
+
+<!-- Food Card 4 -->
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=500" alt="Coffee">
+    <h3>Cold Coffee</h3>
+    <p>₹129</p>
+    <button onclick="addToCart('Cold Coffee',129)">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+<!-- Cart -->
+<section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2>About FreshBite</h2>
+    <p>
+        FreshBite is an online food ordering platform that delivers
+        fresh and delicious meals to your doorstep.
+    </p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@freshbite.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Address: Pune, Maharashtra</p>
+</section>
+
+<footer>
+    <p>© 2026 FreshBite. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
